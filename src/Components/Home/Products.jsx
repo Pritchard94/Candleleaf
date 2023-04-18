@@ -7,7 +7,7 @@ import { Link} from 'react-router-dom'
 const Products = () => {
     
       return (
-    <div className='w-full py-[50px] md:py-[90px] px-[90px]'>
+    <div className='w-full py-[50px] md:py-[90px] md:px-[90px] px-[15px]'>
         <h1 className='text-[50px] text-center font-medium'>Products</h1>
         <p className='text-[18px] text-center mb-[30px] text-[#5E6E89]'>Order it for you or for your beloved ones </p>
         <div className='grid md:grid-cols-4 place-items-center gap-5'>
