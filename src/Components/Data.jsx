@@ -12,56 +12,96 @@ const Data =[
         id:1,
         Name:'Spiced Mint',
         Price:'9.99',
-        Image:spicedmint
+        Image:spicedmint,
+        Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
+        Fragrance:'Premium quality ingredients with natural essential oils ',
+        Dimension:'10cm x 5cm',
+        Burning:'70-75 hours',
+        Weight:'400g'
     },
 
     {
         id:2,
         Name:'Sweet Strawberry',
         Price:'9.99',
-        Image:sweetstrawberry
+        Image:sweetstrawberry,
+        Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
+        Fragrance:'Premium quality ingredients with natural essential oils ',
+        Dimension:'10cm x 5cm',
+        Burning:'70-75 hours',
+        Weight:'400g'
     },
 
     {
         id:3,
         Name:'Cool Blueberry',
         Price:'9.99',
-        Image:coolblueberry
+        Image:coolblueberry,
+        Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
+        Fragrance:'Premium quality ingredients with natural essential oils ',
+        Dimension:'10cm x 5cm',
+        Burning:'70-75 hours',
+        Weight:'400g'
     },
 
     {
         id:4,
         Name:'Juicy Lemon',
         Price:'9.99',
-        Image:juicy
+        Image:juicy,
+        Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
+        Fragrance:'Premium quality ingredients with natural essential oils ',
+        Dimension:'10cm x 5cm',
+        Burning:'70-75 hours',
+        Weight:'400g'
     },
 
     {
         id:5,
         Name:'Honey Lemon',
         Price:'9.99',
-        Image:honey
+        Image:honey,
+        Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
+        Fragrance:'Premium quality ingredients with natural essential oils ',
+        Dimension:'10cm x 5cm',
+        Burning:'70-75 hours',
+        Weight:'400g'
     },
 
     {
         id:6,
         Name:'Cool Fragrant',
         Price:'9.99',
-        Image:frag
+        Image:frag,
+        Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
+        Fragrance:'Premium quality ingredients with natural essential oils ',
+        Dimension:'10cm x 5cm',
+        Burning:'70-75 hours',
+        Weight:'400g'
     },
 
     {
         id:7,
         Name:'Summer Cheries',
         Price:'9.99',
-        Image:summer
+        Image:summer,
+        Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
+        Fragrance:'Premium quality ingredients with natural essential oils ',
+        Dimension:'10cm x 5cm',
+        Burning:'70-75 hours',
+        Weight:'400g'
     },
 
     {
         id:8,
         Name:'Clean Lavender',
         Price:'9.99',
-        Image:lavender
+        Image:lavender,
+        Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
+        Fragrance:'Premium quality ingredients with natural essential oils ',
+        Dimension:'10cm x 5cm',
+        Burning:'70-75 hours',
+        Weight:'400g'
     }
     
 ]
