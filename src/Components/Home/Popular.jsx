@@ -21,8 +21,8 @@ const Popular = () => {
         <div className='grid md:grid-cols-4 gap-10 mt-[30px]'>
             {pop ?.map((items)=>(
                 <Link to ={`productdetails/ ${items.id}`} key={items.id}>
-                       <div className='rounded-sm shadow-sm shadow-gray-200 hover:shadow-emerald-800 hover:shadow-sm cursor-pointer' >
-                            <img className='bg-gray-50' src={items.Image} alt='spicedmint'/>
+                       <div className='rounded-sm shadow-sm shadow-gray-200 hover:scale-110 hover:border-b-[3px] hover:border-emerald-800 duration-300 ease-in-out hover:shadow-sm cursor-pointer' >
+                            <img className='bg-gray-50 w-full' src={items.Image} alt='spicedmint'/>
                             <div className='py-[10px] px-[26px] grid'>
                                 <p className='text-[16px]'>{items.Name}</p>
                                 <p className=' text-end text-[#56B280]'>{items.Price}$</p>
