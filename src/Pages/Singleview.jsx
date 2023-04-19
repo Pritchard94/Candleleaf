@@ -71,9 +71,9 @@ const Singleview = () => {
                     <p><b>Wax:</b>{item.Wax}</p>
                     <p><b>Fragrance:</b>{item.Fragrance}</p>
                   <div className='grid md:grid-cols-3 md:space-x-4'>
-                    <p className='text-[13px]'><b>Burning Hours:</b>{item.Burning}</p>
-                    <p className='text-[13px]'><b>Dimension:</b>{item.Dimension}</p>
-                    <p className='text-[13px]'><b>Weight:</b>{item.Weight}</p>
+                    <p className='text-[15px] font-normal'><b>Burning Hours:</b>{item.Burning}</p>
+                    <p className='text-[15px] font-normal'><b>Dimension:</b>{item.Dimension}</p>
+                    <p className='text-[15px] font-normal'><b>Weight:</b>{item.Weight}</p>
 
                   </div>
                 </div>

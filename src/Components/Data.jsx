@@ -23,7 +23,8 @@ const Data =[
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
         Weight:'400g',
-        Category:'Product'
+        Category:'Product',
+        Popular: "Yes"
     },
 
     {
@@ -49,7 +50,8 @@ const Data =[
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
         Weight:'400g',
-        Category:'Product'
+        Category:'Product',
+        Popular: "Yes"
     },
 
     {
@@ -75,7 +77,8 @@ const Data =[
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
         Weight:'400g',
-        Category:'Product'
+        Category:'Product',
+        Popular:"Yes"
     },
 
     {
@@ -114,7 +117,8 @@ const Data =[
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
         Weight:'400g',
-        Category:'Product'
+        Category:'Product',
+        Popular:"Yes"
     },
     {
         id:8,
