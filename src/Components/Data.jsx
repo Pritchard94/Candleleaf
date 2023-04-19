@@ -6,6 +6,11 @@ import honey from '../assets/honeylemon.svg'
 import frag from '../assets/fragrant.svg'
 import summer from '../assets/summercheries.svg'
 import lavender from '../assets/cleanlav.svg'
+import profile1 from'../assets/profile1.svg'
+import profile2 from'../assets/profile2.svg'
+import profile3 from'../assets/profile3.svg'
+import star1 from '../assets/4Stars.svg'
+import star2 from '../assets/5Stars.svg'
 
 const Data =[
     {
@@ -17,7 +22,8 @@ const Data =[
         Fragrance:'Premium quality ingredients with natural essential oils ',
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
-        Weight:'400g'
+        Weight:'400g',
+        Category:'Product'
     },
 
     {
@@ -29,7 +35,8 @@ const Data =[
         Fragrance:'Premium quality ingredients with natural essential oils ',
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
-        Weight:'400g'
+        Weight:'400g',
+        Category:'Product'
     },
 
     {
@@ -41,7 +48,8 @@ const Data =[
         Fragrance:'Premium quality ingredients with natural essential oils ',
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
-        Weight:'400g'
+        Weight:'400g',
+        Category:'Product'
     },
 
     {
@@ -53,7 +61,8 @@ const Data =[
         Fragrance:'Premium quality ingredients with natural essential oils ',
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
-        Weight:'400g'
+        Weight:'400g',
+        Category:'Product'
     },
 
     {
@@ -65,7 +74,8 @@ const Data =[
         Fragrance:'Premium quality ingredients with natural essential oils ',
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
-        Weight:'400g'
+        Weight:'400g',
+        Category:'Product'
     },
 
     {
@@ -77,7 +87,8 @@ const Data =[
         Fragrance:'Premium quality ingredients with natural essential oils ',
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
-        Weight:'400g'
+        Weight:'400g',
+        Category:'Product'
     },
 
     {
@@ -89,7 +100,8 @@ const Data =[
         Fragrance:'Premium quality ingredients with natural essential oils ',
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
-        Weight:'400g'
+        Weight:'400g',
+        Category:'Product'
     },
 
     {
@@ -101,7 +113,32 @@ const Data =[
         Fragrance:'Premium quality ingredients with natural essential oils ',
         Dimension:'10cm x 5cm',
         Burning:'70-75 hours',
-        Weight:'400g'
+        Weight:'400g',
+        Category:'Product'
+    },
+    {
+        id:8,
+        Name:'Luisa',
+        Comment:'“I love it! No more air fresheners”',
+        Category:'Testimonial',
+        Image:star1,
+        Profile:profile1
+    },
+    {
+        id:9,
+        Name:'Edoardo',
+        Comment:'“Raccomended for everyone”',
+        Category:'Testimonial',
+        Image:star2,
+        Profile:profile2
+    },
+    {
+        id:10,
+        Name:'Mart',
+        Comment:'“Looks very natural, the smell is awesome”',
+        Category:'Testimonial',
+        Image:star2,
+        Profile:profile3
     }
     
 ]
