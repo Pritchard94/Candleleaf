@@ -143,6 +143,30 @@ const Data =[
         Category:'Testimonial',
         Image:star2,
         Profile:profile3
+    },
+    {
+        id:8,
+        Name:'Luisa',
+        Comment:'“I love it! No more air fresheners”',
+        Category:'Testimonial',
+        Image:star1,
+        Profile:profile1
+    },
+    {
+        id:9,
+        Name:'Edoardo',
+        Comment:'“Raccomended for everyone”',
+        Category:'Testimonial',
+        Image:star2,
+        Profile:profile2
+    },
+    {
+        id:10,
+        Name:'Mart',
+        Comment:'“Looks very natural, the smell is awesome”',
+        Category:'Testimonial',
+        Image:star2,
+        Profile:profile3
     }
     
 ]
