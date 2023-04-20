@@ -50,17 +50,7 @@ const Testimonial = () => {
       ))}
     </Swiper>
           
-          {/* {test?.map((items)=>(
-            
-            <div className='w-[350px] h-[295px] bg-white p-2 rounded-lg'>
-               <div className='grid place-items-center space-y-3'>
-                <img src={items.Profile} alt='profile'/>
-                <img src={items.Image} alt='star'/>
-                <p className='text-[22px]'>{items.Comment}</p>
-                <p className='text-[18px] text-[#7C8087]'>{items.Name}</p>
-               </div>
-             </div>
-          ))} */}
+         
         </div>
         <div className="mt-[30px] md:hidden">
                   <Swiper
