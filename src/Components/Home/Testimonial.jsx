@@ -57,10 +57,9 @@ const Testimonial = () => {
           spaceBetween={50}
           slidesPerView={1}
           autoplay={true}
-          pagination={true}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
-          modules={[Autoplay,Pagination]}
+          modules={[Autoplay]}
         >
           {test?.map((items)=>(
               <SwiperSlide className=" flex justify-center">
