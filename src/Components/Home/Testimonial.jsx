@@ -30,6 +30,8 @@ const Testimonial = () => {
               <Swiper
       spaceBetween={50}
       slidesPerView={3}
+      navigation={true}
+      modules={[Navigation]}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
     >
@@ -65,11 +67,13 @@ const Testimonial = () => {
           spaceBetween={50}
           slidesPerView={1}
           autoplay={true}
+          pagination={true}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
+          modules={[Autoplay,Pagination]}
         >
           {test?.map((items)=>(
-              <SwiperSlide>
+              <SwiperSlide className=" flex justify-center">
                 <div className='w-[350px] text-center  h-[295px] bg-white p-2 rounded-lg'>
                   <div className='grid place-items-center space-y-3'>
                     <img src={items.Profile} alt='profile'/>
