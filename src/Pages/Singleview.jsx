@@ -6,6 +6,7 @@ import Button from '../Components/Button'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
 
+
 const Singleview = () => {
     const [item, setItem] = useState({})
     let {id} = useParams()
@@ -15,6 +16,30 @@ const Singleview = () => {
          })
          setItem(Post[0])
     },[])
+
+    const [count, setCount] = useState(0)
+    const plusHandler = ()=>{
+        setCount(count + 1)
+    }
+    const minusHandler = ()=>{
+        setCount(count - 1)
+        if (count == 0){
+            setCount(0)
+        }
+    }
+    const [cart, setCart] = useState([]);
+  const [total, setTotal] = useState(0);
+
+  const handleAddItem = (item) => {
+    setCart([...cart, cart]);
+    setTotal(total + item.price);
+    console.log(cart)
+  };
+
+
+
+
+
   return (
     <div className='w-full md:px-[40px] py-[130px] px-[15px] '>
         <div className='grid md:grid-cols-2' >
@@ -36,9 +61,9 @@ const Singleview = () => {
                             <div>
                                 <p>Quantity</p>
                                 <div className='border-[1px] border-[#56B280] flex w-fit space-x-3 px-2 mt-[6px] py-1'>
-                                    <button className='text-[#56B280]'>+</button>
-                                    <p>0</p>
-                                    <button className='text-[#56B280]'>-</button>
+                                    <button onClick={plusHandler} className='text-[#56B280]'>+</button>
+                                    <p>{count}</p>
+                                    <button onClick={minusHandler} className='text-[#56B280]'>-</button>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +84,7 @@ const Singleview = () => {
                                 </div>
                                 <p className='text-[14px] text-[#656565] mt-[7px]'>Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout. See details</p>
                             </div>
-                            <button className='bg-[#56B280] flex items-center justify-center mt-[67px] text-white  w-full text-[20px] rounded px-[44px] py-[8px] hover:bg-[#006c31]'>
+                            <button onClick={handleAddItem} className='bg-[#56B280] flex items-center justify-center mt-[67px] text-white  w-full text-[20px] rounded px-[44px] py-[8px] hover:bg-[#006c31]'>
                                 <AiOutlineShoppingCart/> + Add to cart
                             </button>
                             
