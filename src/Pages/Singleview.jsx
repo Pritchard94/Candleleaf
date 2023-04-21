@@ -84,9 +84,11 @@ const Singleview = () => {
                                 </div>
                                 <p className='text-[14px] text-[#656565] mt-[7px]'>Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout. See details</p>
                             </div>
+                            <a href='/details'>
                             <button onClick={handleAddItem} className='bg-[#56B280] flex items-center justify-center mt-[67px] text-white  w-full text-[20px] rounded px-[44px] py-[8px] hover:bg-[#006c31]'>
                                 <AiOutlineShoppingCart/> + Add to cart
                             </button>
+                            </a>
                             
                         </div>
 
