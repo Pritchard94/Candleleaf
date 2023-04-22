@@ -375,7 +375,9 @@ const Shipping = () => {
               </div>
               <div className='grid text-center gap-4 md:flex items-center md:justify-between mt-9'>
                 <a href='/' className='text-[18px] text-[#56B280] underline'>Back to cart</a>
-                <Button type="submit" disabled={!formik.isValid || formik.isSubmitting} name='Go to Shipping' />
+                <Link to='/shipping'>
+                    <Button type="submit" disabled={!formik.isValid || formik.isSubmitting} name='Go to Shipping' />
+                </Link>
               </div>
 
             
