@@ -39,7 +39,7 @@ const ShipAddress = () => {
             </div>
         </div>
         <div className='grid text-center md:flex gap-4 items-center md:justify-between mt-[50px]'>
-            <a href='/' className='text-[18px] text-[#56B280] underline'>Back to cart</a>
+            <a href='/details' className='text-[18px] text-[#56B280] underline'>Back to details</a>
             <Button  name='Go to Payment' />
         </div>
       
