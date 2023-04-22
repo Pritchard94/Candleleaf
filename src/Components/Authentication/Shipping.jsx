@@ -68,9 +68,7 @@ const Shipping = () => {
                         <Field name="lastName" 
                          className='border-[1px] outline-none w-full border-[#56B280] p-2'type="text" placeholder='Last Name'/>
                         <ErrorMessage name="lastName" className='text-[12px] text-red-500' />
-                
                     </div>
-             
             </div>
 
             <div>
@@ -83,30 +81,30 @@ const Shipping = () => {
               <Field name="shippingnote" type="text" className='border-[1px] outline-none mt-[16px] w-full border-[#56B280] p-2' placeholder='Shipping Note (optional)' />
               <ErrorMessage name="shippingnote" />
             </div>
-            <div className='flex space-x-3'>
-              <div>
-                <label htmlFor="city"></label>
-                <Field name="city" type="text" className='border-[1px] outline-none mt-[16px] w-full border-[#56B280] p-2'
-                placeholder='City'
-                />
-                <ErrorMessage name="city" />
-              </div>
-                <div>
-                <label htmlFor="postalcode"></label>
-                <Field name="postalcode" type="text" 
-                className='border-[1px] outline-none mt-[16px] w-full border-[#56B280] p-2'
-                placeholder='PostalCode'
-                />
-                <ErrorMessage name="postalcode" />
-              </div>
-              <div>
-                <label htmlFor="province"></label>
-                <Field name="province" type="text" 
-                className='border-[1px] outline-none mt-[16px] w-full border-[#56B280] p-2'
-                placeholder='province'
-                />
-                <ErrorMessage name="province" />
-              </div>
+            <div className='grid md:grid-cols-3 md:space-x-3'>
+                  <div>
+                    <label htmlFor="city"></label>
+                    <Field name="city" type="text" className='border-[1px] outline-none mt-[16px] w-full border-[#56B280] p-2'
+                    placeholder='City'
+                    />
+                    <ErrorMessage name="city" />
+                  </div>
+                    <div>
+                    <label htmlFor="postalcode"></label>
+                    <Field name="postalcode" type="text" 
+                    className='border-[1px] outline-none mt-[16px] w-full border-[#56B280] p-2'
+                    placeholder='PostalCode'
+                    />
+                    <ErrorMessage name="postalcode" />
+                  </div>
+                  <div>
+                    <label htmlFor="province"></label>
+                    <Field name="province" type="text" 
+                    className='border-[1px] outline-none mt-[16px] w-full border-[#56B280] p-2'
+                    placeholder='province'
+                    />
+                    <ErrorMessage name="province" />
+                  </div>
 
             </div> 
 
@@ -375,7 +373,7 @@ const Shipping = () => {
                 <input type='checkbox'/>
                 <p className='text-[14px] text-[#272727]'>Save this informations for a future fast checkout</p>
               </div>
-              <div className='flex items-center justify-between mt-9'>
+              <div className='grid text-center gap-4 md:flex items-center md:justify-between mt-9'>
                 <a href='/' className='text-[18px] text-[#56B280] underline'>Back to cart</a>
                 <Button type="submit" disabled={!formik.isValid || formik.isSubmitting} name='Go to Shipping' />
               </div>

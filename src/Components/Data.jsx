@@ -131,7 +131,7 @@ const Data =[
     {
         id:9,
         Name:'Edoardo',
-        Comment:'“Raccomended for everyone”',
+        Comment:'“Recommended for everyone”',
         Category:'Testimonial',
         Image:star2,
         Profile:profile2
@@ -155,7 +155,7 @@ const Data =[
     {
         id:9,
         Name:'Edoardo',
-        Comment:'“Raccomended for everyone”',
+        Comment:'“Recommended for everyone”',
         Category:'Testimonial',
         Image:star2,
         Profile:profile2
