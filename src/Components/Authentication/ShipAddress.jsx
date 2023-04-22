@@ -39,7 +39,9 @@ const ShipAddress = () => {
             </div>
         </div>
         <div className='grid text-center md:flex gap-4 items-center md:justify-between mt-[50px]'>
-            <a href='/details' className='text-[18px] text-[#56B280] underline'>Back to details</a>
+            <Link to='/details'>
+                <p className='text-[18px] text-[#56B280] underline'>Back to details</p>
+            </Link>
             <Button  name='Go to Payment' />
         </div>
       
