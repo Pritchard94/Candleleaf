@@ -3,6 +3,7 @@ import Head from '../Components/Authentication/Head'
 import Nav from '../Components/Authentication/Nav'
 import DetailForm from '../Components/Authentication/DetailForm'
 import Shipping from '../Components/Authentication/Shipping'
+import CartBanner from '../Components/Cart/CartBanner'
 
 const Details = () => {
   return (
@@ -15,7 +16,8 @@ const Details = () => {
                 <Shipping/>
 
             </div>
-            <div className='bg-[#F2F2F2] px-[30px] py-[20px] md:pb-[90px] md:px-[90px]'>
+            <div className='bg-[#F2F2F2] px-[30px] py-[20px] md:pb-[90px] md:px-[20px]'>
+              <CartBanner/>
 
             </div>
 

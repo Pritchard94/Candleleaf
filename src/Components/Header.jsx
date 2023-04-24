@@ -1,12 +1,19 @@
 import React from 'react'
 import logo from '../assets/mainlogo.svg'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import {FiUser} from 'react-icons/fi'
 import {AiOutlineShoppingCart, AiOutlineMenu} from 'react-icons/ai'
 import { useState } from 'react'
 import {GrClose} from 'react-icons/gr'
+import { useContext } from "react";
+import cartContext from "../Context/Cart/cartContext";
+
+
 
 const Header = () => {
+    const { cartItems, showHideCart } = useContext(cartContext);
+
+
     const Navigation = [
         {names:'Discovery', href:'/Discovery'},
         {names:'About', href:'/About'},
@@ -43,7 +50,19 @@ const Header = () => {
             </div>
             <div className='flex space-x-[25px]'>
                 <FiUser size={25} />
-                <AiOutlineShoppingCart size={25} />
+                <Link to='/Cart'>
+                    <div className='relative'>
+                            <AiOutlineShoppingCart size={25} />
+                            {cartItems.length > 0 && (
+                                <div className='bg-red-900 text-white text-xs text-center w-[15px] h-[15px] rounded-full
+                                -mt-[30px]'>
+                                    <span>{cartItems.length}</span>
+                                </div>)
+                            }
+
+                        </div>
+                </Link>
+                
             </div>
         </div>
                     {/* dropdown */}

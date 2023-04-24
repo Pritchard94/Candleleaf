@@ -16,7 +16,7 @@ const Data =[
     {
         id:1,
         Name:'Spiced Mint',
-        Price:'9.99',
+        Price:9.99,
         Image:spicedmint,
         Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
         Fragrance:'Premium quality ingredients with natural essential oils ',
@@ -30,7 +30,7 @@ const Data =[
     {
         id:2,
         Name:'Sweet Strawberry',
-        Price:'9.99',
+        Price:9.99,
         Image:sweetstrawberry,
         Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
         Fragrance:'Premium quality ingredients with natural essential oils ',
@@ -43,7 +43,7 @@ const Data =[
     {
         id:3,
         Name:'Cool Blueberry',
-        Price:'9.99',
+        Price:9.99,
         Image:coolblueberry,
         Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
         Fragrance:'Premium quality ingredients with natural essential oils ',
@@ -57,7 +57,7 @@ const Data =[
     {
         id:4,
         Name:'Juicy Lemon',
-        Price:'9.99',
+        Price:9.99,
         Image:juicy,
         Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
         Fragrance:'Premium quality ingredients with natural essential oils ',
@@ -70,7 +70,7 @@ const Data =[
     {
         id:5,
         Name:'Honey Lemon',
-        Price:'9.99',
+        Price:9.99,
         Image:honey,
         Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
         Fragrance:'Premium quality ingredients with natural essential oils ',
@@ -84,7 +84,7 @@ const Data =[
     {
         id:6,
         Name:'Cool Fragrant',
-        Price:'9.99',
+        Price:9.99,
         Image:frag,
         Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
         Fragrance:'Premium quality ingredients with natural essential oils ',
@@ -97,7 +97,7 @@ const Data =[
     {
         id:7,
         Name:'Summer Cheries',
-        Price:'9.99',
+        Price:9.99,
         Image:summer,
         Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
         Fragrance:'Premium quality ingredients with natural essential oils ',
@@ -110,7 +110,7 @@ const Data =[
     {
         id:8,
         Name:'Clean Lavender',
-        Price:'9.99',
+        Price:9.99,
         Image:lavender,
         Wax:'Top grade Soy wax that delivers a smoke less,  consistent burn',
         Fragrance:'Premium quality ingredients with natural essential oils ',
@@ -121,7 +121,7 @@ const Data =[
         Popular:"Yes"
     },
     {
-        id:8,
+        id:9,
         Name:'Luisa',
         Comment:'“I love it! No more air fresheners”',
         Category:'Testimonial',
@@ -129,7 +129,7 @@ const Data =[
         Profile:profile1
     },
     {
-        id:9,
+        id:10,
         Name:'Edoardo',
         Comment:'“Recommended for everyone”',
         Category:'Testimonial',
@@ -137,7 +137,7 @@ const Data =[
         Profile:profile2
     },
     {
-        id:10,
+        id:11,
         Name:'Mart',
         Comment:'“Looks very natural, the smell is awesome”',
         Category:'Testimonial',
@@ -145,7 +145,7 @@ const Data =[
         Profile:profile3
     },
     {
-        id:8,
+        id:12,
         Name:'Luisa',
         Comment:'“I love it! No more air fresheners”',
         Category:'Testimonial',
@@ -153,7 +153,7 @@ const Data =[
         Profile:profile1
     },
     {
-        id:9,
+        id:13,
         Name:'Edoardo',
         Comment:'“Recommended for everyone”',
         Category:'Testimonial',
@@ -161,7 +161,7 @@ const Data =[
         Profile:profile2
     },
     {
-        id:10,
+        id:14,
         Name:'Mart',
         Comment:'“Looks very natural, the smell is awesome”',
         Category:'Testimonial',

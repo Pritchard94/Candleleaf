@@ -1,14 +1,14 @@
 import Data from '../Components/Data'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import React, { useEffect } from 'react'
-import Button from '../Components/Button'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
-import {Link} from 'react-router-dom'
+import cartContext from "../Context/Cart/cartContext";
 
 
 
 const Singleview = () => {
+    const { addToCart } = useContext(cartContext);
     const [item, setItem] = useState({})
     let {id} = useParams()
     useEffect(()=>{
@@ -28,19 +28,6 @@ const Singleview = () => {
             setCount(0)
         }
     }
-    const [cart, setCart] = useState([]);
-  const [total, setTotal] = useState(0);
-
-  const handleAddItem = (item) => {
-    setCart([...cart, cart]);
-    setTotal(total + item.price);
-    console.log(cart)
-  };
-
-
-
-
-
   return (
     <div className='w-full md:px-[40px] py-[130px] px-[15px] '>
         <div className='grid md:grid-cols-2' >
@@ -85,11 +72,11 @@ const Singleview = () => {
                                 </div>
                                 <p className='text-[14px] text-[#656565] mt-[7px]'>Subscribe now and get the 10% of discount on every recurring order.  The discount will be applied at checkout. See details</p>
                             </div>
-                            <Link to='/details'>
-                            <button onClick={handleAddItem} className='bg-[#56B280] flex items-center justify-center mt-[67px] text-white  w-full text-[20px] rounded px-[44px] py-[8px] hover:bg-[#006c31]'>
+                            
+                            <button  onClick={() => addToCart(item)} className='bg-[#56B280] flex items-center justify-center mt-[67px] text-white  w-full text-[20px] rounded px-[44px] py-[8px] hover:bg-[#006c31]'>
                                 <AiOutlineShoppingCart/> + Add to cart
                             </button>
-                            </Link>
+                        
                             
                         </div>
 

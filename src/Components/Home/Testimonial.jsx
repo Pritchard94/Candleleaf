@@ -36,7 +36,7 @@ const Testimonial = () => {
       onSwiper={(swiper) => console.log(swiper)}
     >
       {test?.map((items)=>(
-          <SwiperSlide>
+          <SwiperSlide key={items.id}>
             <div className='w-[350px] text-center  h-[295px] bg-white p-2 rounded-lg'>
                <div className='grid place-items-center space-y-3'>
                 <img src={items.Profile} alt='profile'/>
@@ -62,7 +62,7 @@ const Testimonial = () => {
           modules={[Autoplay]}
         >
           {test?.map((items)=>(
-              <SwiperSlide className=" flex justify-center">
+              <SwiperSlide key={items.id} className=" flex justify-center">
                 <div className='w-[350px] text-center  h-[295px] bg-white p-2 rounded-lg'>
                   <div className='grid place-items-center space-y-3'>
                     <img src={items.Profile} alt='profile'/>
