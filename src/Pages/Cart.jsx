@@ -1,12 +1,12 @@
 import {React, useContext} from 'react'
 import Header from '../Components/Header'
-import cartContext from "../Context/Cart/cartContext";
+import CartContext from "../Context/Cart/cartContext";
 import {Link} from 'react-router-dom'
 import Button from '../Components/Button';
-
+import { v4 as uuidv4, v5 as uuidv5 } from 'uuid';
 
 const Cart = () => {
-  const { showCart,removeItem, cartItems, showHideCart } = useContext(cartContext);
+  const {removeItem, cartItems } = useContext(CartContext);
   const total = cartItems.reduce((acc, items) => acc + items.Price, 0)
   return (
     <div className='w-full'>
@@ -34,7 +34,7 @@ const Cart = () => {
                 </div>
 
               {cartItems.map((items)=>(
-                <div key={items.id} className='pb-[30px] border-b-[1px]'>
+                <div key={uuidv4()} className='pb-[30px] border-b-[1px]'>
                  
                   <div className='flex justify-between items-center mt-[20px]'>
                     <div className='flex space-x-2'>
@@ -44,7 +44,7 @@ const Cart = () => {
                       <div>
                         <h1 className='text-[20px] font-medium'>{items.Name}</h1>
                         <h1  className='text-[20px] font-medium'>Candleaf®</h1>
-                        <button className='underline mt-[40px] text-[#56B280]'onClick={()=>removeItem(items.id)}>Remove</button>
+                        <button className='underline mt-[40px] text-[#56B280]'onClick={()=>removeItem(id)}>Remove</button>
                       </div>
                     </div>
                     

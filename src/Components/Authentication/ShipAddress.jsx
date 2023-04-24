@@ -42,7 +42,9 @@ const ShipAddress = () => {
             <Link to='/details'>
                 <p className='text-[18px] text-[#56B280] underline'>Back to details</p>
             </Link>
-            <Button  name='Go to Payment' />
+            <Link to='/payment'>
+                    <Button  name='Go to Payment' />
+            </Link>
         </div>
       
            

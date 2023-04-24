@@ -2,6 +2,7 @@ import {React, useContext} from 'react'
 import cartContext from "../../Context/Cart/cartContext"
 import {Link} from 'react-router-dom'
 import Button from '../../Components/Button';
+import { v4 as uuidv4, v5 as uuidv5 } from 'uuid';
 
 const CartBanner = () => {
     const { showCart,removeItem, cartItems, showHideCart } = useContext(cartContext);
@@ -17,7 +18,7 @@ const CartBanner = () => {
                 </div>
 
               {cartItems.map((items)=>(
-                <div key={items.id} className='pb-[30px] border-b-[1px]'>
+                <div key={uuidv4()} className='pb-[30px] border-b-[1px]'>
                  
                   <div className='flex justify-between items-center mt-[20px]'>
                     <div className='flex space-x-2'>

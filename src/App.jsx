@@ -5,6 +5,8 @@ import Discovery from "./Pages/Discovery"
 import Details from "./Pages/Details"
 import Shipping from "./Pages/Shipping"
 import Cart from "./Pages/Cart"
+import Payment from "./Pages/Payment"
+import Thankyou from "./Pages/Thankyou"
 
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
                 <Route path="/productdetails/:id" element={<Productview/>}/>
                 <Route path="/details" element={<Details/>}/>
                 <Route path="/shipping" element={<Shipping/>}/>
+                <Route path="/payment" element={<Payment/>}/>
+                <Route path="/thankyou" element={<Thankyou/>}/>
                 <Route path="/cart" element={<Cart/>}/>
               </Routes>
           </BrowserRouter>

@@ -4,6 +4,7 @@ import Nav from '../Components/Authentication/Nav'
 import DetailForm from '../Components/Authentication/DetailForm'
 import Shipping from '../Components/Authentication/Shipping'
 import CartBanner from '../Components/Cart/CartBanner'
+import { v4 as uuidv4, v5 as uuidv5 } from 'uuid';
 
 const Details = () => {
   return (
